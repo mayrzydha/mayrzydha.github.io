@@ -1,0 +1,36 @@
+body {
+  font-family: "Space Mono", ui-monospace, monospace;
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 0.5rem;
+}
+
+p {
+  margin: 0.25rem 0;
+  color: #555;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #111;
+    color: #eee;
+  }
+  p {
+    color: #aaa;
+  }
+}
