@@ -7,13 +7,15 @@ body {
   text-align: center;
 }
 
-h1 {
-  margin: 0 0 0.5rem;
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 }
 
-p {
-  margin: 0.25rem 0;
-  color: #555;
+h1 {
+  margin: 0 0 0.5rem;
+  font-size: clamp(1.4rem, 6vw, 2.5rem);
 }
 
 a {
@@ -25,12 +27,14 @@ a:hover {
   opacity: 0.6;
 }
 
+a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background: #111;
     color: #eee;
-  }
-  p {
-    color: #aaa;
   }
 }
