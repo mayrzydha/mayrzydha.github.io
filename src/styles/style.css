@@ -1,5 +1,14 @@
+:root {
+  color-scheme: dark;
+  --bg: #0c0c0c;
+  --fg: #eeeeee;
+  --accent: #33ff33;
+}
+
 body {
   font-family: "Space Mono", ui-monospace, monospace;
+  background: var(--bg);
+  color: var(--fg);
   min-height: 100vh;
   margin: 0;
   display: grid;
@@ -19,7 +28,7 @@ h1 {
 }
 
 a {
-  color: inherit;
+  color: var(--accent);
   text-decoration-thickness: 1px;
   text-underline-offset: 0.3em;
 }
@@ -36,11 +45,4 @@ a:hover {
 a:focus-visible {
   outline: 2px solid currentColor;
   outline-offset: 4px;
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background: #111;
-    color: #eee;
-  }
 }
