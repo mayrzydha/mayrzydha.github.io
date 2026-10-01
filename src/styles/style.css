@@ -5,8 +5,14 @@
   --accent: #33ff33;
 }
 
+@font-face {
+  font-family: "Monocraft";
+  src: url("/fonts/Monocraft.ttf") format("truetype");
+  font-display: swap;
+}
+
 body {
-  font-family: "Space Mono", ui-monospace, monospace;
+  font-family: "Monocraft", ui-monospace, monospace;
   background: var(--bg);
   color: var(--fg);
   min-height: 100vh;
